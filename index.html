@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Site</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-light bg-light"> <!--Resolução de tela, estrutura de cores e cor de fundo -->
+		<div class="container">
+		<a class="navbar-brand h1 mb-0" href="#">Web Designer</a> <!--navbar-brand pode ser usado para logomarca e linkar -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+			<span class="navbar-toggler-icon"></span>
+		</button> <!-- controle do botão da nav, tipo e redirecionamento do botão -->
+
+		<div class="collapse navbar-collapse" id="navbarSite"> <!--Redireciona para o menu quando clicar no botao -->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sobre</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Serviços</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Depoimentos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contatos</a>
+				</li>
+			</ul>
+
+			<!--Configuração de botão com classe social alinhado a esquerda -->
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item">Facebook</a>
+						<a href="#" class="dropdown-item">Twitter</a>
+						<a href="#" class="dropdown-item">Youtube</a>
+					</div>
+				</li>				
+			</ul>
+
+			<!--Configuração do campo de busca no cabeçalho-->
+			<form class="form-inline"> <!--Formulario em linha-->
+				<input class="form-control ml-4 mr-2" type="search" name="" placeholder="Buscar..."> <!--Configuraão do botão de busca e o que está escrito dentro do campo de pesquisa-->
+				<button class="btn btn-default" type="submit">OK</button>
+			</form>
+		</div> 
+		</div>
+	</nav> 
+
+	<div id="carouselSite" class="carousel slide" data-ride="carousel">
+		<!-- Classe da parte interna do slide-->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/01.jpg" class="img-fluid d-block"> <!--Imagens responsivas para todos os dispositivos-->
+				<!--Inserindo legenda no slide-->
+				<div class="carousel-caption d-none d-md-block text-dark">
+					<h1>Aprenda Web Designer</h1>
+					<p>Seja um desenvolvedor web, apenda técnicas com bootstrap, html, css e outras linguagens!!!</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/02.jpg" class="img-fluid d-block"> 
+			</div>
+			<div class="carousel-item">
+				<img src="img/03.jpg" class="img-fluid d-block"> 
+			</div>
+		</div>
+		<!--Criando e configurando os botões de retorno e avanço do slide -->
+		<!-- A # antes da referencia informa que é para a mesma pagina -->
+		<a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+			<span class="sr-only">Anterior</span> <!--Interpleta o botão do slide visando acenssibilidade-->
+		</a> 
+
+		<a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+			<span class="sr-only">Posterior</span>
+		</a> 
+	</div>
+	<!--Configurando o texto oculpando toda a tela e centralizado-->
+	<div class="container"><!-- my-5 na linha abaixo é o espaçamento entre o container e o slide-->
+		<div class="row"><!--Armazena as colunas internamente de melhor forma-->
+			<div class="col-12 text-center my-5"> <!--Col 12 siguinifica utilizar 100% da tela ou seja 12 coluna. Se for 6 é 50% da tela ou seja um conteudo a esquerda e outro a direita MY-5 -> Significa que terar o espaço de 5px a cima e a baixo.-->
+				<h1 class="display-3"><!--Display é um nativo do bootstrap e vai de 1 a 5 que é o tamanho do h1-->
+					<i class="fab fa-accusoft text-secondary"></i>Bem Vindos!!!</h1><!--Icones com font awesome. TEXT-SECONDARY é a cor do icone-->
+				<p>Seja bem vindo a nosso curso de web designer, você aprenderá diversas técnicas para desenvolver seus sites!!!</p>
+			</div>
+		</div>
+
+		<!--CARDES Iniciando a utilização de CARDES, aula 20. ROW é a margen da linha-->
+		<!--<DIV CLASS="ROW JUSTIFY-CONTENT-SM">-> é Utilizado para alinhar os carde em menor tamanho de tablete, juntoamente com a seguinte configuração da <DIV CLASS="COL-SM-6 COL-MD4 MB-5">-->
+		<div class="row  justify-contente-sm-center"><!--mt-5 separação da parte superior. mb-5 margem borda-->
+			<div class="col-sm-6 col-md-4 mb-5"><!-- Divisão de coluna. Será 3 colunas que oculpará 4 cada uma delas-->
+				<div class="card">
+					<img class="card-img-top" src="img/01.jpg"><!--Imagen do card no topo do card-->
+					<div class="card-body"> <!--Corpo do Card-->
+						<h4 class="card-title">Design Gráfico</h4><!--Titulo do card-->						
+						<h6 class="card-subtitle mb-2 text-muted">Aprenda já Design Gráfico</h6><!--Subtitulo do card-->
+						<p class="card-text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI</p>
+						<!--Dentro do link contem o DATA-TOGGLE informando que vai receber um MODAL.--> 
+						<!--DATA-TARGET é a referencia para onde irá é a referencia-->
+						<a href="#" data-toggle="modal" data-target="#siteModal" class="card-link">Design Gráfico</a>
+						<a href="#" class="card-link">Saiba Mais</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<img class="card-img-top" src="img/02.jpg">
+					<div class="card-body">
+						<h4 class="card-title">Programação Web</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Aprenda já Programar Sites</h6>
+						<p class="card-text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI</p>
+						<a href="#" data-toggle="modal" data-target="#prog" class="card-link">Design Gráfico</a>
+						<a href="#" class="card-link">Saiba Mais</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 mb-5">
+				<div class="card">
+					<img class="card-img-top" src="img/03.jpg">
+					<div class="card-body">
+						<h4 class="card-title">Web Design</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Aprenda já Web Design</h6>
+						<p class="card-text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI</p>
+						<a href="#" class="card-link">Web Design</a>
+						<a href="#" class="card-link">Saiba Mais</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 mb-5">
+				<div class="card">
+					<div class="card-body">
+						Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 mb-5">
+				<div class="card">
+					<div class="card-body">
+						Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 mb-5">
+				<div class="card">
+					<div class="card-body">
+						Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI
+					</div>
+				</div>
+			</div>			
+		</div>
+		<!--Se eu quizer que a coluna oculpe um espaço menor-->
+		<!--A div abaixo é a div do menu lateral da pagina-->
+		<div class="row"><!--Armazena as colunas internamente de melhor forma-->
+			<div class="col-md-4 col-sm-6 mb-3"><!--Com 3 colunas e faz o conteudo ficar a esquerda-->
+				<nav id="navbarVertical" class="navbar-light bg-light">
+					<nav class="nav nav-pills flex-column">
+					<a class="nav-link" href="#item1">Curso de Web Design</a>					
+						<nav class="nav nav-pills flex-column">
+						<a class="nav-link ml-3" href="#item1-1">Criando Templates</a>	
+						<nav class="nav nav-pills flex-column">
+						<a class="nav-link ml-3" href="#item1-2">Criando Sites</a>	
+						</nav>
+				<a class="nav-link my-2" href="#item2">Curso de Programador</a>
+				<a class="nav-link my-2" href="#item3">Curso de Design Grafico</a>
+					<nav class="nav nav-pills flex-column">
+					<a class="nav-link ml-3" href="#item3-1">Criando Animação</a>	
+					<a class="nav-link ml-3" href="#item3-2">Criando Projetos</a>	
+					</nav>
+				</nav>
+			</div>
+			<!-- de 2 colunas auterei para 9 melhorando a vizualização do texto e completando o total de 12 colunas, com isso a pagina fica completa em largura-->
+				<!-- DATA-SPY="scroll" é para rolagem de página com o alvo: DATA-OFFSET: para entender que o link será jogado direto para área do primeiro intem da navbar-->
+			<div class="col-md-8 col-sm-6 mb-2">
+				<!--class scrollspy que é uma área de rolagem e para configurar a folha de estilo. DATA-OFFSET="0"
+					Significa que que é o primeiro item da navbar--> 
+				<div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspy">
+					<h4 id="item1">Web Design</h4>
+					<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+
+					<h5 id="item1-1">Criação de Tamplates</h5><!--ITEM1-1: significa que o submenu 1 do item 1-->
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
+
+					<h5 id="item1-2">Criação de Sites</h5><!--ITEM1-2: significa o submenu 2 do item 1-->
+					<p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem.</p>
+
+					<h4 id="item2">Curso de Programador"></h4><!--Item 2-->
+					<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+
+					<h4 id="item3">Curso de Design Gráfico</h4>
+					<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+
+					<h5 id="item3-1">Criação Animações</h5><!--ITEM1-1: significa que o submenu 1 do item 1-->
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
+
+					<h5 id="item3-2">Criação Projetos</h5><!--ITEM1-2: significa o submenu 2 do item 1-->
+					<p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem.</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<!--JUMBOTRON fluido -->
+	<div class="jumbotron jumbotron-fluid mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h1 class="Display-4">Aprenda já Design Web</h1>
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto</p>
+					<hr><!--Cria uma linha abaixo do texto-->
+				</div>
+			</div>
+			<!--Criando uma lista dentro do jumbotron-->
+			<div class="row">
+				<div class="col-12">
+					<ul class="nav nav-pills justify-content-center mb-5" id="pills-nav" role="tablist">
+						<li class="nav-item mr-4">
+							<a class="nav-link active" id="nav-01" href="#nav-item-01" data-toggle="pill">Cadastre-se já</a>
+						</li>
+
+						<li class="nav-item mr-4">
+							<a class="nav-link" id="nav-02" href="#nav-item-02" data-toggle="pill">Contate-nos</a>
+						</li>
+
+						<li class="nav-item mr-4">
+							<a class="nav-link" id="nav-03" href="#nav-item-03" data-toggle="pill">Nossos Serviços</a>
+						</li>
+					</ul>
+
+					<div class="tab-content" id="nav-pills-content">
+						<div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tPOMG0D57S0"></iframe>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<h5>Seja um Desenvolvedor</h5><hr>
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+								</div>
+								
+							</div>							
+						</div>
+						<div class="tab-pane fade show" id="nav-item-02" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tPOMG0D57S0"></iframe>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<h5>Seja um Designer Gráfico</h5><hr>
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+								</div>
+								
+							</div>								
+						</div>
+						<div class="tab-pane fade show" id="nav-item-03" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tPOMG0D57S0"></iframe>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<h5>Seja um Web Designer</h5><hr>
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+
+									<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração. </p>
+								</div>								
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--ICONES- PERSONALIZANDO ICONES-->
+	<div class="container mg-5">
+		<div class="row">
+			<div class="col-12 text-center my-5">
+				<h1 class="Display-4"><i class="fas fa-envelope-open mr-2"></i>Contate Nos</h1>
+			</div>
+		</div>
+
+		<!--FORMULARIOS COM BOOTSTRAP-->
+		<div class="row justify-content-center mb-5">
+			<div class="col-sm-12 col-md-10 col-lg-8">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-sm-6"><!-- COL-SM-6, indica que irá oculpar 50% da tela-->
+							<label for="nome">Nome</label>
+							<input type="text" class="form-control" id="nome" placeholder="Nome">
+						</div>
+
+						<div class="form-group col-sm-6">
+							<label for="sobrenome">Sobrenome</label>
+							<input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+						</div>
+
+						<div class="form-group col-sm-12"><!--COL-SM-12, oculpa 100% da tela-->
+							<label for="endereço">Endereço</label>
+							<input type="text" class="form-control" id="endereço" placeholder="Endereço">
+						</div>
+
+						<div class="form-group col-sm-6"><!--COL-SM-12, oculpa 100% da tela-->
+							<label for="endereço">Cidade</label>
+							<input type="text" class="form-control" id="cidade" placeholder="Cidade">
+						</div>
+
+						<div class="form-group col-sm-6"><!--COL-SM-12, oculpa 100% da tela-->
+							<label for="endereço">Estado</label>
+							<input type="text" class="form-control" id="Estado" placeholder="Estado">
+						</div>					
+					</div>
+
+					<!--Botão de envio-->
+					<!--TYPE="SUBMIT" botão de envio. BTN-PRIMARY é a cor do botão-->
+					<!--POPOVER- botão de ajuda linha 359-->
+					<div class="form-row"><!-- Linha do BOTÃO-->
+						<div class="col-sm-12">
+							<button type="submit" class="btn btn-primary"><i class="fas fa-envelope-square mr-2"></i>Enviar</button>
+							<a class="btn btn-secondary ml-2" tabindex="0" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Ajudo com o Formulário" data-content="Preencha o formulário para receber informações em seu email..."><i class="fas fa-info mr-2"></i>Ajuda</a>
+						</div>							
+					</div>					
+				</form>
+			</div>
+		</div>
+
+		<!--RODAPÉ -->
+		<div class="row mt-5">
+			<div class="col-12"><hr></div>
+			<div class="col-sm-4">
+				<h3 class="Display-5 mb-3">Curso de Web</h3>
+				<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diamagração.</p>
+			</div>
+			<div class="col-sm-6">
+				<h3 class="Display-5 mb-3">Links</h3>
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action">Sobre</a>
+					<a href="#" class="list-group-item list-group-item-action">Empresa</a>
+					<a href="#" class="list-group-item list-group-item-action">Depoimentos</a>
+					<a href="#" class="list-group-item list-group-item-action">Contatos</a>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<h3 class="Display-5 mb-3">Social</h3>
+				<div class="btn-group-vertical" role="group"><!--Alinhando os botões na vertical-->
+				<a href="#" class="btn btn-light"><h5 class="mb-2"><i class="fab fa-facebook mr-2"></i>Facebook &nbsp;</h5></a>
+				<a href="#" class="btn btn-light"><h5 class="mb-2"><i class="fab fa-twitter-square mr-2"></i>Twitter &nbsp; &nbsp; &nbsp;</h5></a><!--Dentro do A a class ALT e TITLE, serve para visualizar o número do telefone ao posicionar o propusor do mouse em cima do icon.-->
+				<a href="#" class="btn btn-light" alt="31 98956-1523" title="31 98956-1523"><h5 class="mb-2"><i class="fab fa-whatsapp-square mr-2"></i>Whatsapp</h5></a>
+				<a href="#" class="btn btn-light"><h5 class="mb-2"><i class="fab fa-instagram mr-2"></i>Instagram</h5></a>
+				</div>
+			</div>
+
+			<div class="col-12 my-5">
+				<blockquote class="blockquote text-center">
+					<p class="mb-0">Desenvolvendo um site com Bootstrap para o curso de Bootstrap 4!!!!</p>
+					<footer class="blockquote-footer">
+						Freitas Fábio
+
+					<cite title="Titulo">Desenvolvimento Web</cite>
+					</footer>
+
+				</blockquote>
+			</div>
+	</div>
+
+	<!--MODAL CRINDO E CONFIGURANDO JANELAS MODAL aula 23, 25 E 25-->
+	<!--São três dives obrigatoria-->
+	<!-- A palavra FADE dar efeito de abrir a janela mais apresentavel-->
+	<div class="modal fade" id="siteModal" tabindex="-1" role="dialog"><!--TABINDEX="-1" é o posicionamento ROLE="DIALOG" caixa de dialogo.--> 
+		<!--Dentro da div modal-dialog se utiliza: modal-sm ou lg maior--> 
+		<div class="modal-dialog modal-lg" role="document"><!-- class que estamos utilizando e a de identificação--> 
+			<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Designer Gráfico</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-6"
+					<p>2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais </p>	
+					<img src="img/01.jpg" width="100%"><!--WIDTH="100%" PARA A IMAGEM FUNCIONAR COM CONTAINER FLUIDO-->
+					<!--Barra de rolagem automatizada se tiver muito texto-->
+					<p>2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais </p>				
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--MODAL COM CONTAINER FLUIDO-->
+	<div class="modal fade" id="prog" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document"><!-- class que estamos utilizando e a de identificação--> 
+			<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Programação</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-6"><!--Separando em colunas-->
+								<h5>Programador Web</h5>
+								<p>2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais </p>	
+							</div>
+							<div class="col-6">
+								<h5>Programador Desktop</h5>
+								<p>2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais </p>	
+						</div>
+									
+					</div>			
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- Configuração java script para o POPOVER-->
+<!--POPOVER exige utilização do arquivo BUNDLE.JS que se encontra no seguinte caminho: <script type="text/javascript" src="js/bootstrap.bundle.js"></script>-->
+<script type="text/javascript">
+	$(function(){
+		$('[data-toggle="popover"]').popover()
+	})
+</script>
